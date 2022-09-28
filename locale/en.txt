@@ -1,0 +1,116 @@
+#: locale=en
+
+## Action
+
+### URL
+PopupWebFrameBehaviour_47175A0B_5C20_8270_41D0_F7B207B77C00.url = https://www.google.pt/
+
+## E-Learning
+
+### Question Screen
+quizQuestion_ABE53F49_8A6A_7EBB_41CD_2E63D8F81284.ok = OK
+
+### Report Screen
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.title = - SCORE -
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.completion = Completed
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.questionsCorrect = Correct
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.downloadCSV = Download .csv
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.questionsIncorrect = Incorrect
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.items = Items Found
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.questions = Questions
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.repeat = Repeat
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.submitToLMS = Submit
+quizScore_ABEBAF4A_8A6A_7EB9_41DC_D38A468B39DB.elapsedTime = Time
+
+### Score Name
+score1.label = pontos
+
+### Timeout Screen
+quizTimeout_ABE53F49_8A6A_7EBB_41DA_B236D0188577.title = - TIMEOUT -
+quizTimeout_ABE53F49_8A6A_7EBB_41DA_B236D0188577.repeat = Repeat
+quizTimeout_ABE53F49_8A6A_7EBB_41DA_B236D0188577.score = View Score
+
+## Media
+
+### 360 Video
+
+### Audio
+audiores_4AEBEAD5_45B5_6001_41CB_D1451011B09E.mp3Url = media/audio_4B85C36F_45B5_6001_41B2_42BAF2BD24D8_en.mp3
+audiores_CFCBB4E1_DE8D_4074_41DC_F68CA8EA2E17.mp3Url = media/audio_4C865FFB_40DB_B08F_41C1_CFDF81D8DC7F_en.mp3
+audiores_AFB05898_BE7F_3099_41E4_1A3B1A8AF680.mp3Url = media/audio_4E398A72_409F_59EE_41CB_893225D0C191_en.mp3
+audiores_AFAD981B_BE7F_3F9F_41C0_C845A6173859.mp3Url = media/audio_4EDDC432_409F_4969_4188_CB5496E831A5_en.mp3
+audiores_8F0940B4_939E_4661_41C3_8DAB4C3515E9.mp3Url = media/audio_850BA178_9396_46E0_41B3_1251377A7771_en.mp3
+audiores_8F34BFFA_939E_59E0_41DF_32810FDB4DBD.mp3Url = media/audio_85F09916_93B6_C621_41CE_AE62177B4825_en.mp3
+audiores_C50B00AB_DE84_C0F4_41CE_9D1615247FD3.mp3Url = media/audio_C5EC8028_DE84_BFF4_41E6_3E39070B5B19_en.mp3
+audiores_C50AF14E_DE84_C04C_41E5_528A7F803011.mp3Url = media/audio_C71FFABE_DE85_40CC_41D9_EFF25FFBB37A_en.mp3
+
+### Title
+media_6C224E2C_7E7F_42B4_41DF_84683D267714.label = incendio_forno_vertical_part1
+media_6FD21209_7E7E_C27C_41C3_777AF4A617D2.label = incendio_forno_vertical_part2
+media_6FF8F62F_7E77_42B4_41C8_1284EC1754BF.label = incendio_forno_vertical_part3_low
+panorama_8E89DEF6_83B3_5AEC_41D8_021A415BFDE7.label = incendio_forno_vertical_pergunta1
+panorama_938A0983_83B7_6721_41DC_044127125B23.label = incendio_forno_vertical_pergunta2
+media_6D7620F5_7E7E_FF94_41C0_FEB28B6B7801.label = incendio_fregideira_part1
+media_6CED1A78_7E71_C29B_41CC_EBAC0E4A7CDF.label = incendio_fregideira_part2
+media_6CFEC0B3_7E73_5FAC_41A9_58522A963C04.label = incendio_fregideira_part3
+panorama_6CB0F36D_7E73_42B4_41DA_E2AC53C3535C.label = incendio_fregideira_pergunta1
+panorama_8E7D79D6_8360_B10B_41D6_287F8172C033.label = incendio_fregideira_pergunta2
+media_6C5C76CF_7E7F_43F4_41B4_C877EC0F1F78.label = incendio_hotte_extracao_part1
+media_6C270927_7E76_CEB4_41C7_4999AAFE93B7.label = incendio_hotte_extracao_part2
+media_924F59EA_83B2_A715_41C9_973AD9EA574B.label = incendio_hotte_extracao_part3_low
+panorama_92E1B74A_83B3_AB2C_41CB_C34E5EBCDDCC.label = incendio_hotte_extracao_pergunta1
+panorama_92ADC980_83B1_6717_41DF_E83BBC3C0783.label = incendio_hotte_extracao_pergunta2
+media_6EACAB90_7E57_426C_41D7_6D7AF532D703.label = incendio_introducao
+panorama_E2BD349A_ECE6_6C6C_41D4_70B20EEF9502.label = intro
+panorama_E2CDF285_ECE6_2467_41DF_6C317677620C.label = intro_tutorial
+panorama_F13F3F45_FC31_F083_41BA_3A0EC17CB082.label = menu
+panorama_6F04F6A1_7E6F_C3AC_41DE_0FD46EC00B8E.label = menu_controlo_incendio_cozinha
+panorama_83D4DD6C_92B2_85B3_41E0_D734EFE4EB15.label = recomecar
+
+### Video
+videores_92DAC6DF_83B1_AD2D_41D8_A8B7D92B9E75.url = media/media_6C224E2C_7E7F_42B4_41DF_84683D267714_en.mp4
+videores_92DAC6DF_83B1_AD2D_41D8_A8B7D92B9E75.posterURL = media/media_6C224E2C_7E7F_42B4_41DF_84683D267714_poster_en.jpg
+videores_91F91D06_83D3_5F16_41CD_7BD26A979A46.url = media/media_6C270927_7E76_CEB4_41C7_4999AAFE93B7_en.mp4
+videores_914B9F0E_83D3_5B16_41C0_B57593378C0C.url = media/media_6C270927_7E76_CEB4_41C7_4999AAFE93B7_en_1.mp4
+videores_914B9F0E_83D3_5B16_41C0_B57593378C0C.posterURL = media/media_6C270927_7E76_CEB4_41C7_4999AAFE93B7_poster_en.jpg
+videores_91F91D06_83D3_5F16_41CD_7BD26A979A46.posterURL = media/media_6C270927_7E76_CEB4_41C7_4999AAFE93B7_poster_en.jpg
+videores_92DF6958_83B1_A733_41C3_B9D1B8B4F97D.url = media/media_6C5C76CF_7E7F_43F4_41B4_C877EC0F1F78_en.mp4
+videores_92DF6958_83B1_A733_41C3_B9D1B8B4F97D.posterURL = media/media_6C5C76CF_7E7F_43F4_41B4_C877EC0F1F78_poster_en.jpg
+videores_92EFF823_83B3_E510_41C6_F6A7DA2882B3.url = media/media_6CED1A78_7E71_C29B_41CC_EBAC0E4A7CDF_en.mp4
+videores_9256C8E7_83B2_A511_41A6_2137F21673AD.url = media/media_6CED1A78_7E71_C29B_41CC_EBAC0E4A7CDF_en_1.mp4
+videores_92EFF823_83B3_E510_41C6_F6A7DA2882B3.posterURL = media/media_6CED1A78_7E71_C29B_41CC_EBAC0E4A7CDF_poster_en.jpg
+videores_9256C8E7_83B2_A511_41A6_2137F21673AD.posterURL = media/media_6CED1A78_7E71_C29B_41CC_EBAC0E4A7CDF_poster_en.jpg
+videores_915C85C1_83B1_6F11_41B6_9AE4D589FEE5.url = media/media_6CFEC0B3_7E73_5FAC_41A9_58522A963C04_en.mp4
+videores_924F7515_83CE_EF34_41CE_BDCBDB79518A.url = media/media_6CFEC0B3_7E73_5FAC_41A9_58522A963C04_en_1.mp4
+videores_924F7515_83CE_EF34_41CE_BDCBDB79518A.posterURL = media/media_6CFEC0B3_7E73_5FAC_41A9_58522A963C04_poster_en.jpg
+videores_915C85C1_83B1_6F11_41B6_9AE4D589FEE5.posterURL = media/media_6CFEC0B3_7E73_5FAC_41A9_58522A963C04_poster_en.jpg
+videores_92EE0D6E_83B1_DFEC_41C6_D99C46A28388.url = media/media_6D7620F5_7E7E_FF94_41C0_FEB28B6B7801_en.mp4
+videores_92EE0D6E_83B1_DFEC_41C6_D99C46A28388.posterURL = media/media_6D7620F5_7E7E_FF94_41C0_FEB28B6B7801_poster_en.jpg
+videores_92FD7899_83B1_E535_41D0_56DACEF33FBE.url = media/media_6EACAB90_7E57_426C_41D7_6D7AF532D703_en.mp4
+videores_92FD7899_83B1_E535_41D0_56DACEF33FBE.posterURL = media/media_6EACAB90_7E57_426C_41D7_6D7AF532D703_poster_en.jpg
+videores_92D37BC6_83B1_BB1C_41E0_142875BEDFC3.url = media/media_6FD21209_7E7E_C27C_41C3_777AF4A617D2_en.mp4
+videores_92D37BC6_83B1_BB1C_41E0_142875BEDFC3.posterURL = media/media_6FD21209_7E7E_C27C_41C3_777AF4A617D2_poster_en.jpg
+videores_92D6FE3A_83B1_BD74_41D4_29A23AE0884A.url = media/media_6FF8F62F_7E77_42B4_41C8_1284EC1754BF_en.mp4
+videores_92E00212_83B6_A531_41D0_CA0A8E0FA271.url = media/media_6FF8F62F_7E77_42B4_41C8_1284EC1754BF_en_1.mp4
+videores_92D6FE3A_83B1_BD74_41D4_29A23AE0884A.posterURL = media/media_6FF8F62F_7E77_42B4_41C8_1284EC1754BF_poster_en.jpg
+videores_92E00212_83B6_A531_41D0_CA0A8E0FA271.posterURL = media/media_6FF8F62F_7E77_42B4_41C8_1284EC1754BF_poster_en.jpg
+videores_9120D597_83D1_AF36_41D9_7EF984C069E7.url = media/media_924F59EA_83B2_A715_41C9_973AD9EA574B_en.mp4
+videores_9120D597_83D1_AF36_41D9_7EF984C069E7.posterURL = media/media_924F59EA_83B2_A715_41C9_973AD9EA574B_poster_en.jpg
+
+## Right Click Menu
+
+### Text
+PlayerMenuItem_7A85E76E_6313_21AA_41D7_4A31A3B40E63.label = VR2WORK
+
+## Skin
+
+### Multiline Text
+HTMLText_B4EAEDD0_9515_F219_41D2_A035469329FA.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-shadow:0px 0px 3px rgba(0,0,0,1);text-align:left;font-size:12px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-family:'Be Vietnam Pro Medium';"><B>Pontos: {{quiz.score1.score}}</B></SPAN></SPAN></DIV><DIV STYLE="text-shadow:0px 0px 3px rgba(0,0,0,1);text-align:left;font-size:12px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-family:'Be Vietnam Pro Medium';"><B>Cartões Vistos : {{quiz.score2.score}}/{{quiz.score2.score.total}}</B></SPAN></SPAN></DIV></div>
+HTMLText_86F70CF2_950C_F219_41D3_332FDD14BE5A.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-shadow:1px 1px 3px rgba(0,0,0,1);text-align:left;font-size:17px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:17px;font-family:'Be Vietnam Pro Medium';"><B>{{quiz.score3.score}}</B></SPAN></SPAN></DIV></div>
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Auchan Seguranca
