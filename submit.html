@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Montserrat";
+      }
+      section {
+        height: 100vh;
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .container {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0px 0px 20px #00000010;
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        border: 1px solid rgba(128, 128, 128, 0.199);
+        margin-top: 5px;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border: 1px solid #7e141e;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+      button[type="submit"] {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 8px;
+        font-family: "Montserrat";
+        color: #fff;
+        background-color: #7e141e;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s ease background-color;
+      }
+      button[type="submit"]:hover {
+        opacity: 0.8;
+        /* background-color: rgb(214, 226, 236); */
+      }
+      #submit.success {
+        background-color: rgb(211, 250, 153);
+        animation: status 4s ease forwards;
+      }
+
+      #status {
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+      #status.success {
+        background-color: rgb(211, 250, 153);
+        animation: status 4s ease forwards;
+      }
+      #status.error {
+        background-color: rgb(250, 129, 92);
+        color: white;
+        animation: status 4s ease forwards;
+      }
+
+      @keyframes status {
+        0% {
+          opacity: 1;
+          pointer-events: all;
+        }
+        90% {
+          opacity: 1;
+          pointer-events: all;
+        }
+        100% {
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <form action="https://vwork-auchan-pt.azurewebsites.net/api/formations/2c939bdf-3535-4913-976d-57cb52be4a42/internal/tours?code=zTnfblsDcbaOftCxpzHVRN_AtTdCOuSfSBzTVeVdemFOAzFuFlVtSw==" method="POST" id="my-form">
+          <input type="hidden" id="rightAnswersCount" name="rightAnswersCount" value="0" />
+
+          <div class="form-group">
+            <label for="InternalId">Código interno</label>
+            <input type="text" id="InternalId" name="InternalId" value="" required />
+          </div>
+
+          <button id="submit" type="submit">Submeter</button>
+        </form>
+      </div>
+      <div id="status"></div>
+    </section>
+  </body>
+  <script>
+    function getParameterByName(name) {
+      var match = RegExp("[?&]" + name + "=([^&]*)").exec(window.location.search);
+      return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+    }
+
+    window.addEventListener("DOMContentLoaded", function () {
+      // get the form elements defined in your form HTML above
+
+      var form = document.getElementById("my-form");
+      var status = document.getElementById("status");
+
+      function success() {
+        form.reset();
+        status.classList.remove("error", "success");
+        setTimeout(() => {
+          status.classList.add("success");
+          status.innerHTML = "Resultado guardado!";
+        }, 100);
+      }
+
+      function error(msg) {
+        status.classList.remove("error", "success");
+        setTimeout(() => {
+          status.classList.add("error");
+          status.innerHTML = msg || "Oops! There was a problem.";
+        }, 100);
+      }
+
+      // handle the form submission event
+
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        //var data = new FormData(form);
+        var data = formToJSON(form);
+
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+
+    function formToJSON(elem) {
+      let output = {};
+      new FormData(elem).forEach((value, key) => {
+        // Check if property already exist
+        if (Object.prototype.hasOwnProperty.call(output, key)) {
+          let current = output[key];
+          if (!Array.isArray(current)) {
+            // If it's not an array, convert it to an array.
+            current = output[key] = [current];
+          }
+          current.push(value); // Add the new value to the array.
+        } else {
+          output[key] = value;
+        }
+      });
+      return JSON.stringify(output);
+    }
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+      if (!window.navigator.onLine) {
+        error("No internet connection.");
+      } else {
+        document.getElementById("submit").setAttribute("disabled", true);
+        document.getElementById("submit").innerText = "A enviar";
+
+        var myHeaders = new Headers({
+          "Content-Type": "application/json",
+          "Content-Length": data.length.toString(),
+          "X-Custom-Header": "ProcessThisImmediately",
+        });
+
+        var myInit = {
+          method: method,
+          headers: myHeaders,
+          mode: "cors",
+          cache: "default",
+          body: data,
+        };
+
+        fetch(url, myInit)
+          .then(async (response) => {
+            if (response.ok) {
+              document.getElementById("submit").innerText = "Enviado";
+              document.getElementById("submit").className = "success";
+              success();
+            } else {
+              var json = await response.json();
+              error(json.msg);
+
+              document.getElementById("submit").removeAttribute("disabled", false);
+              document.getElementById("submit").innerText = "Submeter";
+            }
+          })
+          .catch(function (error) {
+            console.log("There has been a problem with your fetch operation: " + error.message);
+
+            document.getElementById("submit").removeAttribute("disabled");
+            document.getElementById("submit").innerText = "Submeter";
+
+            if (error.message == "Failed to fetch") {
+              var status = document.getElementById("status");
+              status.classList.remove("error", "success");
+              setTimeout(() => {
+                status.classList.add("error");
+                status.innerHTML = error.message || "Oops! There was a problem.";
+              }, 100);
+            }
+          });
+      }
+    }
+  </script>
+</html>
