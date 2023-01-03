@@ -1,4 +1,8 @@
 {
+ "theme_color": "#000000",
+ "display": "fullscreen",
+ "background_color": "#000000",
+ "name": "Auchan Seguranca",
  "icons": [
   {
    "type": "image/png",
@@ -36,9 +40,5 @@
    "src": "misc/icon64.png"
   }
  ],
- "name": "Auchan Seguranca",
- "display": "fullscreen",
- "theme_color": "#000000",
- "background_color": "#000000",
  "start_url": "index.htm?installed=true"
 }
